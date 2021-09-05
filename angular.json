@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "NitorTTS": {
+      "projectType": "library",
+      "root": "projects/nitor-tts",
+      "sourceRoot": "projects/nitor-tts/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/nitor-tts/tsconfig.lib.json",
+            "project": "projects/nitor-tts/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nitor-tts/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nitor-tts/src/test.ts",
+            "tsConfig": "projects/nitor-tts/tsconfig.spec.json",
+            "karmaConfig": "projects/nitor-tts/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nitor-tts/tsconfig.lib.json",
+              "projects/nitor-tts/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "NitorTTS"
 }

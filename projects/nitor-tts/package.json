@@ -1,0 +1,28 @@
+{
+  "name": "nitor-tts",
+  "version": "1.0.0",
+  "description": "Browser TTS (using Web speech API) made easy",
+  "peerDependencies": {
+    "@angular/common": "^11.1.2",
+    "@angular/core": "^11.1.2"
+  },
+  "author": "Nitor-teja/teja.patil@nitorinfotech.com",
+  "keywords": [
+    "speechSynthesis",
+    "SpeechSynthesisUtterance",
+    "text to speech",
+    "speak"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejapatil20/NitorTTS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tejapatil20/NitorTTS/issues"
+  },
+  "homepage": "https://github.com/tejapatil20/NitorTTS#readme",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
